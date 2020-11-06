@@ -79,6 +79,7 @@
 .second{
 background-color:#f1f1f1 !important;
 height:auto;
+/* margin:-8px ; */
 padding:30px;
 }
 *{
@@ -109,6 +110,7 @@ padding:30px;
 	background-color: #4CAF50 !important;
 	overflow:hidden;
 	letter-spacing:3px;
+	width:100%;
 	
 }
 .navbar a,i{
@@ -132,7 +134,7 @@ padding:30px;
 	/* height:1000px; */
 }
 .main{
-	flex:80%;
+	flex:85%;
 	padding:15px 10px;
 }
 .mid{
@@ -142,7 +144,11 @@ padding:30px;
 	display:flex;
 	height:auto;width:100%;
 }
-
+.row2::after{
+	content:"";
+	clear:both;
+	display:table;
+}
 .colmn{
 	width:50%;
 	float:left;
@@ -225,11 +231,6 @@ color:white;
 	background-color:white;
 }
 
-[class*="col-"]{
-	float:left;
-	
-}
-
 
 .fifth .txt{
 	padding:50px 70px;
@@ -270,12 +271,12 @@ padding-bottom:200px;
 	width:100%;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
 	.para2 a{ width:15.4%;}
 	.nav{ display:none;}
 	
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
 	.upp p{ opacity:0;}
 	.rightt{ display:none;}
 	.rightt32{ display:none;}
@@ -291,7 +292,7 @@ padding-bottom:200px;
 	.para a{ width:50%;}
 	.para2 a{ width:50%;}
 	.side,.navbar{display:none;}
-		
+	
 @media only screen and (max-width: 680px) {
 	body{width:auto}
 		.fifth .r1{padding-left:20px;}

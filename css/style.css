@@ -292,7 +292,14 @@ padding-bottom:200px;
 	.para a{ width:50%;}
 	.para2 a{ width:50%;}
 	.side,.navbar{display:none;}
-	
+		
+@media only screen and (max-width: 680px) {
+	body{width:auto}
+		.fifth .r1{padding-left:20px;}
+	.sixth{padding-left:20px;}
+	.fifth .txt{ padding-bottom:750px;}
+	.para{padding-left:70px;width:auto}.para2{width:auto;padding-left:70px;}
+    }
 }
 
 
